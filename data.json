@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "nombre": "PGJ",
+      "marca": "Hunter",
+      "Radio": "4.5 metros a 11.6 metros",
+      "descripcion": "El aspersor Hunter PGJ es un aspersor de turbina de tamaño compacto",
+      "precio": 20000,
+      "imagen": "img/pgj.jpeg",
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "nombre": "PGP",
+      "marca": "Hunter",
+      "Radio": "4.9 metros a 14.0 metros",
+      "descripcion": "El aspersor PGP es un rotor de turbina de tamaño mediano",
+      "precio": 30000,
+      "imagen": "img/pgp.jpeg",
+      "stock": 10
+    },
+    {
+      "id": 3,
+      "nombre": "MP ROTATOR 1000 + cuerpo",
+      "marca": "Hunter",
+      "Radio": "2.5 a 4.6 metros",
+      "descripcion": "El MP Rotator de Hunter es un tipo de tobera rotativa de chorros múltiples",
+      "precio": 15000,
+      "imagen": "img/mp1000.jpeg",
+      "stock": 10
+    },	
+    {
+        "id": 4,
+        "nombre": "MP ROTATOR 2000 + cuerpo",
+        "marca": "Hunter",
+        "Radio": " 4.0 a 6.4 metros",
+        "descripcion": "El MP Rotator de Hunter es un tipo de tobera rotativa de chorros múltiples",
+        "precio": 15000,
+        "imagen": "img/mp2000.jpeg",
+        "stock": 10
+      }	,
+    {
+        "id": 5,
+        "nombre": "MP ROTATOR 3000 + cuerpo",
+        "marca": "Hunter",
+        "Radio": "6.7 a 9.1 metros",
+        "descripcion": "El MP Rotator de Hunter es un tipo de tobera rotativa de chorros múltiples",
+        "precio": 15000,
+        "imagen": "img/mp3000.jpeg",
+        "stock": 10
+      }
+]
