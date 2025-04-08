@@ -60,6 +60,7 @@ const agregarAlCarrito = (event) => {
         actualizarLocalStorageCarrito();
         mostrarCarrito();
         mostrarProductos();
+
         //SWWETALERT
         Swal.fire({
             title: '¡Producto agregado!',
@@ -86,7 +87,7 @@ const eliminarDelCarrito = (index) => {
         showCancelButton: true,
         confirmButtonColor: '#d33',
         cancelButtonColor: '#3085d6',
-        confirmButtonText: 'Sí, eliminar',
+        confirmButtonText: 'Aceptar',
         cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.isConfirmed) {
@@ -112,7 +113,7 @@ const actualizarCantidadCarrito = (index, nuevaCantidad) => {
     const productoId = carrito[index].id;
     const productoEnData = productosData.find(p => p.id === productoId);
     const diferencia = nuevaCantidad - carrito[index].cantidad;
-
+//control de stock
     if (productoEnData && productoEnData.stock >= diferencia && nuevaCantidad > 0) {
         productoEnData.stock -= diferencia;
         carrito[index].cantidad = parseInt(nuevaCantidad);
@@ -127,7 +128,7 @@ const actualizarCantidadCarrito = (index, nuevaCantidad) => {
             text: `No hay suficiente stock de "${carrito[index].nombre}". Stock disponible: ${productoEnData.stock + carrito[index].cantidad}`,
             icon: 'error'
         });
-        mostrarCarrito(); // Para revertir el cambio en el input
+        mostrarCarrito(); 
     }
 };
 
@@ -174,7 +175,7 @@ const finalizarCompra = () => {
             carrito = [];
             actualizarLocalStorageCarrito();
             mostrarCarrito();
-            cargarProductos(); // Recargar productos para resetear el stock (opcional)
+            cargarProductos();
         });
     } else {
         Swal.fire({
